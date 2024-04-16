@@ -1,5 +1,9 @@
 # Spoonful 🍴👨🏻‍🍳
 
+![Capa do Projeto](public/demo1.png)
+![Cozinha Americana](public/demo2.png)
+![Receitas e ingredientes](public/demo3.png)
+
 Spoonful é um projeto em React que permite aos usuários explorar receitas usando a API Spoonacular. Para começar a usar o Spoonful, você precisará obter uma chave de API gratuita do Spoonacular e configurá-la no projeto.
 
 ## Configurando a Chave da API Spoonacular 🔑🔒
