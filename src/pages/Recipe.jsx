@@ -25,7 +25,7 @@ const Recipe = () => {
     return () => {
       isMounted = false;
     };
-  }, [params.id]);
+  });
 
   return (
     <Wrapper>

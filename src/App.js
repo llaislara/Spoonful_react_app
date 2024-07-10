@@ -3,14 +3,15 @@ import Pages from "./pages/Pages";
 import Category from "./components/Category";
 import Search from "./components/Search";
 import styled from "styled-components";
-import { GiChefToque } from "react-icons/gi";
+import logo from "./logoSpoonfulWhite.png"; 
 
 const App = () => {
   return (
     <div>
       <Nav className="Top">
-        <GiChefToque />
-        <Logo to={"/"}>Spoonful</Logo>
+        <Logo to={"/"}>
+          <img src={logo} alt="Spoonful Logo" />
+        </Logo>
       </Nav>
       {!process.env.REACT_APP_FOOD_API_KEY ? (
         <p>
@@ -43,15 +44,14 @@ const Nav = styled.div`
   svg {
     font-size: 2rem;
   }
-
 `;
-
 
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Lobster Two", cursive;
+  img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+  }
 `;
 
 export default App;
